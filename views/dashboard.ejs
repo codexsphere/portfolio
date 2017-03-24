@@ -35,26 +35,6 @@
       <!-- /.navbar-collapse -->
     </div>
 
-  <!-- <body>
-
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-          </button>
-          <h3>
-          <a class="navbar-brand" href="#">PORTFOLIO</a>
-          </h3>
-        </div>
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="/">HOME</a></li>
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#contact">CONTACT</a></li>
-            <li><a href="#adProject">ADD PROJECT</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
     </nav>
 <br>
 <br>
@@ -73,6 +53,7 @@
         <th>ID</th>
         <th>TITLE</th>
         <th>SERVICE</th>
+        <th>DATE</th>
         <th>
 
 
@@ -85,11 +66,13 @@
           <td><%-item.id%></td>
           <td><%-item.title%></td>
           <td><%-item.service%></td>
+          <td><%-item.date%></td>
 
 
           <td>
-            <a class="btn btn-primary " href="/admin/edit/">Edit</a>
-           <a  class="btn btn-default"  href="<%-item.id%>">Delete</a>
+            <a class="btn btn-primary " href="admin/edit/<%-item.id%>">Edit</a>
+            <!-- <a href="/admin/new">NEW PROJECT</a> -->
+           <a  class="btn btn-default"  href="admin/delete/<%-item.id%>">Delete</a>
            </td>
 
           <!-- <td>
